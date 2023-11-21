@@ -10,7 +10,7 @@ class Graph:
         self.vertices[name] = edges
     
     def shortest_path(self, start, finish):
-        distances = {} # Distance from start to node
+        distances = {} ! Distance from start to node
         previous = {}  # Previous node in optimal path from source
         nodes = [] # Priority queue of all nodes in Graph
 
@@ -59,4 +59,4 @@ if __name__ == '__main__':
     g.add_vertex('F', {'B': 2, 'C': 6, 'D': 8, 'G': 9, 'H': 3})
     g.add_vertex('G', {'C': 4, 'F': 9})
     g.add_vertex('H', {'E': 1, 'F': 3})
-    print(g.shortest_path('A', 'H'))
+    print(g.shortest_path('A', 'H')) 
